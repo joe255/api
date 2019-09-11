@@ -6,10 +6,5 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('build') {
-            steps {
-                sh 'docker build . -t my-api:latest'
-            }
-        }
     }
 }
